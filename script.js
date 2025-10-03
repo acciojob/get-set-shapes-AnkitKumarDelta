@@ -4,23 +4,24 @@ class Rectangle {
 		this._width=width;
 		this._height=height;
 	}
-	area(width,height){
-		return width*height;
+	getarea(){
+		return this._width*this._height;
 	}
-	getwidth(){
+	get width(){
 		return this._width;
 	}
-	getheight(){
+	get height(){
 		return this._height;
 	}
 }
 
 class Square extends Animal {
 	constructor(side){
+		super(side,side);
 		this._side = side;
 	}
-	perimeter(side){
-		return 4*side;
+	getperimeter(){
+		return 4*this._side;
 	}
 }
 
